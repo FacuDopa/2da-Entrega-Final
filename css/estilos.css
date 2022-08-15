@@ -502,13 +502,5 @@ h1 {
     font-size: 13px;
   }
 }
-@media screen and (max-width: 300px) {
-  footer {
-    background-color: aqua;
-  }
-  footer p {
-    color: rgb(206, 194, 194);
-  }
-}
 
 /*# sourceMappingURL=estilos.css.map */

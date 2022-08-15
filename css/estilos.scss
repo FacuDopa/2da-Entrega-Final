@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
+$sombraT: 0px 0px 12px rgb(255, 255, 255);
+$colorform: rgb(206, 194, 194);
+
 *{
     margin: 0;
     padding: 0;
@@ -96,13 +99,13 @@ h1{
     font-size: 40px;
     letter-spacing: 5px;
     padding-bottom: 10px;
-    text-shadow: 0px 0px 12px rgb(255, 255, 255), 0px 0px 12px rgb(255, 255, 255);
+    text-shadow: $sombraT, $sombraT;
 }
 .parrafos_body{
     font-size: 25px;
     color: #00023c;
     font-family: 'Titan One', 'cursive';
-    text-shadow: 0px 0px 12px rgb(255, 255, 255), 0px 0px 12px rgb(255, 255, 255);
+    text-shadow: $sombraT, $sombraT;
 }
 
 .bg-secondary {
@@ -141,7 +144,7 @@ h1{
     margin-bottom: 20px;
     padding: 0;
     padding-top: 20px;
-    text-shadow: 0px 0px 12px rgb(255, 255, 255), 0px 0px 12px rgb(255, 255, 255), 0px 0px 12px rgb(255, 255, 255);
+    text-shadow: $sombraT, $sombraT, $sombraT;
 }
 
 .galeria{
@@ -270,11 +273,11 @@ h1{
     
     .titulo_body{
         padding: 15px 0 10px 10px;
-        text-shadow: 0px 0px 12px rgb(255, 255, 255), 0px 0px 12px rgb(255, 255, 255), 0px 0px 12px rgb(255, 255, 255);
+        text-shadow: $sombraT, $sombraT, $sombraT;
     }
     
     .parrafos_body{
-        text-shadow: 0px 0px 12px rgb(255, 255, 255), 0px 0px 12px rgb(255, 255, 255);
+        text-shadow: $sombraT, $sombraT;
         padding-bottom: 20px;
         padding-left: 10px;
     }
@@ -300,7 +303,7 @@ h1{
     font-family: 'Bangers','cursive';
     font-size: 22px;
     padding-left: 15px;
-    text-shadow: 0px 0px 12px rgb(255, 255, 255), 0px 0px 12px rgb(255, 255, 255);
+    text-shadow: $sombraT, $sombraT;
 }
 
 .accordion{
@@ -308,26 +311,26 @@ h1{
     padding-bottom: 15px;
     --bs-accordion-btn-padding-y: 0px !important;
     /* color del acordeon desplegado */
-    --bs-accordion-active-bg: rgb(206, 194, 194);
+    --bs-accordion-active-bg: $colorform;
     --bs-accordion-active-color: black;
     
     h2{
         padding: 15px 0 15px 0px;
-        background-color: rgb(206, 194, 194);
+        background-color: $colorform;
     }
 }
 
 
 .accordion-button {
-    background-color: rgb(206, 194, 194);
+    background-color: $colorform;
 }
 
 .accordion-item{
-    background-color: rgb(206, 194, 194);
+    background-color: $colorform;
 }
 
 .formulario input{
-    background-color: rgb(206, 194, 194);
+    background-color: $colorform;
     
     &::placeholder{
         color: rgb(83, 81, 81);
@@ -336,7 +339,7 @@ h1{
 }
 
 .formulario textarea{
-    background-color: rgb(206, 194, 194);
+    background-color: $colorform;
     border-radius: 15px;
 }
 
@@ -574,15 +577,5 @@ h1{
 
     nav{
         font-size: 13px;
-    }
-}
-
-@media screen and (max-width: 300px) {
-    footer{
-        background-color: aqua;
-
-        p{
-            color:rgb(206, 194, 194);
-        }
     }
 }
